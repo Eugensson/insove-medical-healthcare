@@ -27,7 +27,7 @@
 }
 
 body {
-  @apply text-secondary font-primary text-lg leading-8;
+  @apply text-secondary font-primary leading-8;
 }
 
 .container {
@@ -64,7 +64,7 @@ body {
 }
 
 .btn {
-  @apply flex items-center justify-center tracking-[1.02px] rounded-full uppercase cursor-pointer transition-colors duration-300;
+  @apply flex items-center justify-center tracking-[1.02px] rounded-full uppercase transition-colors duration-300 cursor-pointer;
 }
 
 .btn-sm {
