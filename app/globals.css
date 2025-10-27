@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "Poppins", sans-serif;
+
+  --color-primary: #242a2b;
+  --color-secondary: #808080;
+  --color-accent: #1cbccf;
+  --color-accent-secondary: #18abbc;
+  --color-accent-tertiary: #90c6cd;
+  --color-grey: #e8f0f1;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1330px;
+
+  --shadow-custom1: 0px 2px 40px 0px rgba(8, 70, 78, 0.08);
+  --shadow-custom2: 0px 0px 30px 0px rgba(8, 73, 81, 0.06);
+
+  --background-image-services: url("/assets/img/services/bg.svg");
+  --background-image-testimonials: url("/assets/img/testimonials/bg.svg");
+  --background-image-departments: url("/assets/img/departments/bg.svg");
+  --background-image-quoteLeft: url("/assets/icons/testimonials/quote-left.svg");
+  --background-image-quoteRight: url("/assets/icons/testimonials/quote-right.svg");
+}
+
+body {
+  @apply text-secondary font-primary text-lg leading-8;
+}
+
+.container {
+  @apply max-w-332.5 mx-auto px-4;
+}
+
+.section {
+  @apply py-12 xl:py-37.5;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply text-primary font-semibold leading-[120%];
+}
+
+.h1 {
+  @apply text-4xl xl:text-[64px];
+}
+
+.h2 {
+  @apply text-3xl xl:text-[44px] capitalize tracking-[0.44px];
+}
+
+.h3 {
+  @apply text-xl xl:text-[26px];
+}
+
+.h4 {
+  @apply text-xl xl:text-[26px] capitalize;
+}
+
+.btn {
+  @apply flex items-center justify-center tracking-[1.02px] rounded-full uppercase cursor-pointer transition-colors duration-300;
+}
+
+.btn-sm {
+  @apply h-14 px-10;
+}
+
+.btn-lg {
+  @apply h-16 px-12.5;
+}
+
+.btn-white {
+  @apply text-secondary bg-white hover:bg-white/80;
+}
+
+.btn-accent {
+  @apply text-white bg-accent hover:bg-accent-secondary;
+}
+
+.btn-outline {
+  @apply text-secondary border-2 border-accent bg-transparent hover:bg-accent hover:text-white;
+}
+
+.input,
+.select {
+  @apply h-16.5 w-full text-secondary font-light placeholder:text-secondary/80 placeholder:font-light rounded-[10px] outline-none border border-[#dfdfdf];
+}
+
+.input {
+  @apply px-4;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-accent;
+}
+
+.faq-item.open .faq-answer {
+  @apply h-full;
+}
