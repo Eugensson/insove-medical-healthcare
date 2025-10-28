@@ -87,13 +87,8 @@ body {
   @apply text-secondary border-2 border-accent bg-transparent hover:bg-accent hover:text-white;
 }
 
-.input,
-.select {
-  @apply h-16.5 w-full text-secondary font-light placeholder:text-secondary/80 placeholder:font-light rounded-[10px] outline-none border border-[#dfdfdf];
-}
-
 .input {
-  @apply px-4;
+  @apply px-4 h-16.5 w-full text-secondary font-light placeholder:font-light rounded-[10px] outline-none border border-[#dfdfdf];
 }
 
 .swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet,
