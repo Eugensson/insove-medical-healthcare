@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { Stats } from "@/components/stats";
 import { Header } from "@/components/header";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <main>
       <Header />
       <Hero />
+      <Stats />
     </main>
   );
 };
