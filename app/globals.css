@@ -56,11 +56,11 @@ body {
 }
 
 .h3 {
-  @apply text-xl xl:text-[26px];
+  @apply text-xl xl:text-2xl;
 }
 
 .h4 {
-  @apply text-xl xl:text-[26px] capitalize;
+  @apply text-xl xl:text-2xl capitalize;
 }
 
 .btn {
