@@ -91,9 +91,8 @@ body {
   @apply px-4 h-16.5 w-full text-secondary font-light placeholder:font-light rounded-[10px] outline-none border border-[#dfdfdf];
 }
 
-.swiper-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.testimonialsSlider .swiper-pagination-bullet,
+.testimonialsSlider .swiper-pagination-bullet {
   @apply bg-accent;
 }
 

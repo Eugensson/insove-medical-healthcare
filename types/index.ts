@@ -16,3 +16,10 @@ export type Service = {
   description: string;
   icon: StaticImageData;
 };
+
+export type Testimonial = {
+  id: string;
+  name: string;
+  position: string;
+  message: string;
+};
