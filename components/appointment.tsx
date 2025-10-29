@@ -83,7 +83,7 @@ export const Appointment = () => {
                     Dr. Noah Lewis — Orthopedic Surgeon
                   </SelectItem>
                   <SelectItem value="avaMartinez">
-                    Dr. Ava Martinez — Dermatologist
+                    Dr. John Martinez — Dermatologist
                   </SelectItem>
                   <SelectItem value="ethanWalker">
                     Dr. Ethan Walker — Neurologist

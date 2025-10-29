@@ -14,11 +14,11 @@ export const TestimonialSlider = () => {
     <Swiper
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      className="testimonialsSlider h-100 max-w-[98vw] xl:max-w-177.5"
+      className="testimonialsSlider min-h-100 max-w-[98vw] xl:max-w-177.5"
     >
       {testimonialsData.map(({ id, name, position, message }) => (
         <SwiperSlide key={id}>
-          <div className="h-full flex flex-col items-start justify-center">
+          <div className="h-full flex flex-col items-start justify-center cursor-pointer">
             <div className="max-w-170 mx-auto text-center xl:text-left">
               <p className="relative mb-7 text-[22px] text-[#4c5354] font-light leading-[190%] text-center xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 before:size-10 before:bg-no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 after:size-10 after:bg-no-repeat">
                 <span className="mx-2">{message}</span>

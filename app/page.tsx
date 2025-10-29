@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { Team } from "@/components/team";
 import { Stats } from "@/components/stats";
 import { Header } from "@/components/header";
 import { Services } from "@/components/services";
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Appointment />
       <Testimonials />
+      <Team />
       <div className="h-1000" />
     </main>
   );

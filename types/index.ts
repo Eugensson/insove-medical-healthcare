@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons/lib";
 
 export type NavItem = {
   name: string;
@@ -22,4 +23,19 @@ export type Testimonial = {
   name: string;
   position: string;
   message: string;
+};
+
+export type Social = {
+  icon: IconType;
+  link: string;
+  ariaLabel: string;
+};
+
+export type TeamItem = {
+  id: string;
+  name: string;
+  position: string;
+  description: string;
+  imageSrc: StaticImageData;
+  socials: Social[];
 };

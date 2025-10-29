@@ -1,9 +1,24 @@
+import {
+  RiYoutubeFill,
+  RiFacebookCircleFill,
+  RiInstagramFill,
+  RiLinkedinBoxFill,
+} from "react-icons/ri";
+
 import icon1 from "@/public/assets/icons/services/icon-1.svg";
 import icon2 from "@/public/assets/icons/services/icon-2.svg";
 import icon3 from "@/public/assets/icons/services/icon-3.svg";
 import icon4 from "@/public/assets/icons/services/icon-4.svg";
+import doctor1 from "@/public/assets/img/team/doctor-1.png";
+import doctor2 from "@/public/assets/img/team/doctor-2.png";
+import doctor3 from "@/public/assets/img/team/doctor-3.jpg";
+import doctor4 from "@/public/assets/img/team/doctor-4.jpg";
+import doctor5 from "@/public/assets/img/team/doctor-5.jpg";
+import doctor6 from "@/public/assets/img/team/doctor-6.jpg";
+import doctor7 from "@/public/assets/img/team/doctor-7.jpg";
+import doctor8 from "@/public/assets/img/team/doctor-8.jpg";
 
-import { NavItem, Service, Stat, Testimonial } from "@/types";
+import { NavItem, Service, Stat, TeamItem, Testimonial } from "@/types";
 
 export const navLinks: NavItem[] = [
   {
@@ -124,5 +139,248 @@ export const testimonialsData: Testimonial[] = [
     position: "Patient",
     message:
       "This clinic sets a new benchmark for medical excellence. Every aspect — from the welcoming staff to precise diagnosis — reflects expertise, integrity, and genuine care.",
+  },
+];
+
+export const teamData: TeamItem[] = [
+  {
+    id: "1",
+    name: "Dr. Emma Clark",
+    position: "Pediatrician",
+    description:
+      "Dedicated to providing gentle, expert care focused on every patient’s comfort and well-being.",
+    imageSrc: doctor1,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Emma Clark's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Emma Clark's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Emma Clark's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Emma Clark's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "2",
+    name: "Dr. Liam Harris",
+    position: "General Practitioner",
+    description:
+      "Committed to delivering trusted healthcare with empathy, precision, and a strong patient connection.",
+    imageSrc: doctor2,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Liam Harris's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Liam Harris's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Liam Harris's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Liam Harris's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "Dr. Ethan Walker",
+    position: "Neurologist",
+    description:
+      "Focused on innovative treatments and compassionate support for each individual’s unique needs.",
+    imageSrc: doctor3,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Ethan Walker's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Ethan Walker's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Ethan Walker's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Ethan Walker's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "4",
+    name: "Dr. William Turner",
+    position: "Radiologist",
+    description:
+      "Skilled in diagnostic imaging, ensuring clarity, accuracy, and personalized attention in every case.",
+    imageSrc: doctor4,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. William Turner's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. William Turner's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. William Turner's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. William Turner's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "Dr. Isabella Scott",
+    position: "Gynecologist",
+    description:
+      "Provides women’s health care with professionalism, compassion, and a focus on lasting wellness.",
+    imageSrc: doctor5,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Isabella Scott's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Isabella Scott's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Isabella Scott's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Isabella Scott's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "7",
+    name: "Dr. Mason Adams",
+    position: "Dentist",
+    description:
+      "Brings expertise and a caring touch to dental health, helping every patient smile with confidence.",
+    imageSrc: doctor7,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Mason Adams's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Mason Adams's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Mason Adams's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Mason Adams's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "6",
+    name: "Dr. Mia Nelson",
+    position: "Nutrition Specialist",
+    description:
+      "Promotes balanced nutrition and healthy habits to support long-term vitality and overall wellness.",
+    imageSrc: doctor6,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. Mia Nelson's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. Mia Nelson's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. Mia Nelson's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. Mia Nelson's Instagram account",
+      },
+    ],
+  },
+  {
+    id: "8",
+    name: "Dr. John Martinez",
+    position: "Dermatologist",
+    description:
+      "Specializes in skin health, offering advanced treatments with care, precision, and lasting results.",
+    imageSrc: doctor8,
+    socials: [
+      {
+        icon: RiLinkedinBoxFill,
+        link: "https://linkedin.com",
+        ariaLabel: "Link to Dr. John Martinez's Linkedin account",
+      },
+      {
+        icon: RiFacebookCircleFill,
+        link: "https://facebook.com",
+        ariaLabel: "Link to Dr. John Martinez's Facebook account",
+      },
+      {
+        icon: RiYoutubeFill,
+        link: "https://youtube.com",
+        ariaLabel: "Link to Dr. John Martinez's Youtube channel",
+      },
+      {
+        icon: RiInstagramFill,
+        link: "https://instagram.com",
+        ariaLabel: "Link to Dr. John Martinez's Instagram account",
+      },
+    ],
   },
 ];
