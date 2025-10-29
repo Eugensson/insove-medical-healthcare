@@ -5,6 +5,7 @@ import { Stats } from "@/components/stats";
 import { Header } from "@/components/header";
 import { Services } from "@/components/services";
 import { Appointment } from "@/components/appointment";
+import { Departments } from "@/components/departments";
 import { Testimonials } from "@/components/testimonials";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Testimonials />
       <Team />
       <Faq />
+      <Departments />
       <div className="h-1000" />
     </main>
   );

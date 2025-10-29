@@ -19,6 +19,7 @@ import doctor7 from "@/public/assets/img/team/doctor-7.jpg";
 import doctor8 from "@/public/assets/img/team/doctor-8.jpg";
 
 import {
+  Department,
   FaqItem,
   NavItem,
   Service,
@@ -422,5 +423,76 @@ export const faqsData: FaqItem[] = [
     question: "Are your doctors certified specialists?",
     answer:
       "All our doctors are board-certified experts with years of experience in their respective fields. Continuous education and international training ensure they provide the highest medical standards.",
+  },
+];
+
+export const departmentData: Department[] = [
+  {
+    id: "1",
+    name: "Neurology Clinic",
+    description1:
+      "Our Neurology Clinic provides specialized care for brain, spine, and nerve disorders. We focus on precise diagnosis, advanced therapy, and long-term management for neurological health.",
+    description2:
+      "Using modern neuro-diagnostic tools and imaging systems, our specialists create personalized treatment plans that restore balance, confidence, and quality of life for each patient.",
+    list: ["Neurocritical Care", "Neuro Oncology", "Geriatric Neurology"],
+    link: "/",
+  },
+  {
+    id: "2",
+    name: "Cardiology Clinic",
+    description1:
+      "Our Cardiology Clinic delivers expert diagnostics and treatment for cardiovascular conditions. We emphasize prevention, early detection, and rehabilitation after heart-related events.",
+    description2:
+      "Equipped with leading technology, our cardiologists manage hypertension, arrhythmia, and coronary disease to improve heart function, ensure resilience, and support lasting recovery.",
+    list: [
+      "Heart Diagnostics",
+      "Cardiac Rehabilitation",
+      "Interventional Cardiology",
+    ],
+    link: "/",
+  },
+  {
+    id: "3",
+    name: "Gynecology Clinic",
+    description1:
+      "Our Gynecology Clinic offers advanced women’s health care from preventive checkups to pregnancy support. We combine expertise, compassion, and full confidentiality for every visit.",
+    description2:
+      "Our specialists provide prenatal monitoring, fertility support, and hormonal care with attention to comfort, accuracy, and each woman’s physical and emotional well-being.",
+    list: ["Prenatal Care", "Fertility Support", "Reproductive Health"],
+    link: "/",
+  },
+  {
+    id: "4",
+    name: "Pathology Clinic",
+    description1:
+      "Our Pathology Clinic ensures reliable diagnostic services through detailed sample analysis. We offer precise testing that supports effective decisions and treatment planning.",
+    description2:
+      "By combining digital pathology with laboratory expertise, we deliver accurate, timely results that help clinicians provide high-quality, evidence-based care for all patients.",
+    list: ["Clinical Pathology", "Histopathology", "Molecular Testing"],
+    link: "/",
+  },
+  {
+    id: "5",
+    name: "Pediatrics Clinic",
+    description1:
+      "Our Pediatrics Clinic provides complete healthcare for children from infancy to adolescence. We focus on growth, prevention, and emotional support in a safe environment.",
+    description2:
+      "We offer immunizations, routine checkups, and disease management with a caring approach that builds trust, ensures comfort, and supports lifelong healthy development.",
+    list: [
+      "Child Immunization",
+      "Developmental Screening",
+      "Pediatric Nutrition",
+    ],
+    link: "/",
+  },
+  {
+    id: "6",
+    name: "Dermatology Clinic",
+    description1:
+      "Our Dermatology Clinic treats skin, hair, and nail concerns using modern medical and cosmetic methods. We help patients maintain healthy, radiant, and balanced skin care.",
+    description2:
+      "Our dermatologists provide acne, eczema, and anti-aging solutions designed to renew skin tone, boost confidence, and ensure natural, long-lasting aesthetic results.",
+    list: ["Medical Dermatology", "Laser Therapy", "Cosmetic Dermatology"],
+    link: "/",
   },
 ];

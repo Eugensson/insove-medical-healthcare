@@ -45,3 +45,12 @@ export type FaqItem = {
   question: string;
   answer: string;
 };
+
+export type Department = {
+  id: string;
+  name: string;
+  description1: string;
+  description2: string;
+  list: string[];
+  link: string;
+};
