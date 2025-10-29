@@ -1,3 +1,4 @@
+import { Faq } from "@/components/faq";
 import { Hero } from "@/components/hero";
 import { Team } from "@/components/team";
 import { Stats } from "@/components/stats";
@@ -16,6 +17,7 @@ const Home = () => {
       <Appointment />
       <Testimonials />
       <Team />
+      <Faq />
       <div className="h-1000" />
     </main>
   );

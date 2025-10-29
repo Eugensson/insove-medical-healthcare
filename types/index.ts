@@ -39,3 +39,9 @@ export type TeamItem = {
   imageSrc: StaticImageData;
   socials: Social[];
 };
+
+export type FaqItem = {
+  id: string;
+  question: string;
+  answer: string;
+};

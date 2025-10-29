@@ -18,7 +18,14 @@ import doctor6 from "@/public/assets/img/team/doctor-6.jpg";
 import doctor7 from "@/public/assets/img/team/doctor-7.jpg";
 import doctor8 from "@/public/assets/img/team/doctor-8.jpg";
 
-import { NavItem, Service, Stat, TeamItem, Testimonial } from "@/types";
+import {
+  FaqItem,
+  NavItem,
+  Service,
+  Stat,
+  TeamItem,
+  Testimonial,
+} from "@/types";
 
 export const navLinks: NavItem[] = [
   {
@@ -382,5 +389,38 @@ export const teamData: TeamItem[] = [
         ariaLabel: "Link to Dr. John Martinez's Instagram account",
       },
     ],
+  },
+];
+
+export const faqsData: FaqItem[] = [
+  {
+    id: "1",
+    question: "Why choose Insove Medical Healthcare?",
+    answer:
+      "Insove Medical Healthcare offers personalized treatment, advanced diagnostic technology, and a compassionate team of professionals dedicated to your long-term well-being. We combine expertise with comfort to provide truly patient-centered care.",
+  },
+  {
+    id: "2",
+    question: "How can I book an appointment with a doctor?",
+    answer:
+      "You can schedule an appointment easily through our website, by phone, or by visiting our reception desk. Same-day and urgent appointments are also available depending on the doctor’s schedule.",
+  },
+  {
+    id: "3",
+    question: "Does Insove Medical Healthcare accept insurance?",
+    answer:
+      "Yes, we work with most major insurance providers. Our administrative team will assist you in confirming coverage and handling the necessary paperwork to ensure a smooth experience.",
+  },
+  {
+    id: "4",
+    question: "What types of medical services do you offer?",
+    answer:
+      "We provide a wide range of services including general practice, diagnostics, cardiology, gynecology, dermatology, pediatrics, physiotherapy, and preventive health check-ups.",
+  },
+  {
+    id: "5",
+    question: "Are your doctors certified specialists?",
+    answer:
+      "All our doctors are board-certified experts with years of experience in their respective fields. Continuous education and international training ensure they provide the highest medical standards.",
   },
 ];
