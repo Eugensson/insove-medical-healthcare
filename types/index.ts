@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
 import { IconType } from "react-icons/lib";
+import { StaticImageData } from "next/image";
 
 export type NavItem = {
   name: string;
@@ -7,8 +7,10 @@ export type NavItem = {
 };
 
 export type Stat = {
-  title: string;
-  value: string;
+  id: string;
+  value: number;
+  countText: string;
+  text: string;
 };
 
 export type Service = {

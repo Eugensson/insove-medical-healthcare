@@ -70,20 +70,28 @@ export const navLinks: NavItem[] = [
 
 export const statsData: Stat[] = [
   {
-    title: "Satisfied Patients",
-    value: "+5,525",
+    id: "1",
+    value: 5525,
+    countText: "",
+    text: "Satisfied Patients",
   },
   {
-    title: "Medical Centers Nationwide",
-    value: "29",
+    id: "2",
+    value: 29,
+    countText: "",
+    text: "Medical Centers Nationwide",
   },
   {
-    title: "Experienced Doctors",
-    value: "+73",
+    id: "3",
+    value: 73,
+    countText: "+",
+    text: "Experienced Doctors",
   },
   {
-    title: "Years of Trusted Care",
-    value: "15+",
+    id: "4",
+    value: 15,
+    countText: "+",
+    text: "Years of Trusted Care",
   },
 ];
 

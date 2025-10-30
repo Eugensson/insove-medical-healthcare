@@ -1,16 +1,32 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { blogData } from "@/lib/data";
+import { fadeIn } from "@/lib/variants";
 
 export const Blog = () => {
   return (
     <section className="container">
-      <h2 className="h2 mb-12.5 text-center xl:text-left">Our recents posts</h2>
+      <motion.h2
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.8 }}
+        className="h2 mb-12.5 text-center xl:text-left"
+      >
+        Our recents posts
+      </motion.h2>
       <ul className="mb-12.5 flex flex-col xl:flex-row items-center xl:justify-between gap-y-6 xl:gap-y-0">
         {blogData.map(
-          ({ id, title, description, imageUrl, category, date }) => (
-            <li
+          ({ id, title, description, imageUrl, category, date }, index) => (
+            <motion.li
+              variants={fadeIn("up", 0.4 + index * 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.8 }}
               key={id}
               className="max-w-105 rounded-[10px] shadow-custom2 overflow-hidden cursor-pointer group"
             >
@@ -34,7 +50,7 @@ export const Blog = () => {
                   Read more
                 </Link>
               </div>
-            </li>
+            </motion.li>
           )
         )}
       </ul>

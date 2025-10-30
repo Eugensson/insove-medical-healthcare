@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import { SocialList } from "@/components/social-list";
 
@@ -22,7 +22,8 @@ export const OurTeamSlider = () => {
         768: { slidesPerView: 2 },
       }}
       pagination={{ clickable: true }}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
+      autoplay={{ delay: 10000, disableOnInteraction: false }}
       className="testimonialsSlider h-170 xl:h-110"
     >
       {teamData.map(

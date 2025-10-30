@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 import { Department } from "@/types";
+import { fadeIn } from "@/lib/variants";
 import { departmentData } from "@/lib/data";
 
 export const Departments = () => {
@@ -17,7 +19,13 @@ export const Departments = () => {
       <div className="relative min-h-147 max-w-367 mx-4 xl:mx-auto px-6 xl:px-0 py-12 xl:pt-20 xl:pb-22.5 flex items-center bg-departments bg-cover xl:bg-auto bg-no-repeat bg-center rounded-[20px]">
         <div className="container">
           <div className="flex flex-col xl:flex-row gap-x-5">
-            <ul className="mb-12.5 xl:mb-0 xl:pt-3 xl:w-77.5 flex flex-col gap-y-7.5 xl:gap-y-10 font-medium uppercase text-center xl:text-left text-base text-[#9ab4b7] xl:text-lg">
+            <motion.ul
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.8 }}
+              className="mb-12.5 xl:mb-0 xl:pt-3 xl:w-77.5 flex flex-col gap-y-7.5 xl:gap-y-10 font-medium uppercase text-center xl:text-left text-base text-[#9ab4b7] xl:text-lg"
+            >
               {departmentData.map(({ id, name }, index) => (
                 <li key={id}>
                   <button
@@ -32,8 +40,14 @@ export const Departments = () => {
                   </button>
                 </li>
               ))}
-            </ul>
-            <div className="xl:w-160">
+            </motion.ul>
+            <motion.div
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.8 }}
+              className="xl:w-160"
+            >
               <h2 className="h2 mb-5 text-center xl:text-left">
                 {activeDepartment.name}
               </h2>
@@ -59,7 +73,7 @@ export const Departments = () => {
               >
                 Learn More
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,17 +1,33 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { RiMailFill, RiMapPinFill, RiPhoneFill } from "react-icons/ri";
 
 import { Logo } from "@/components/logo";
 import { SocialList } from "@/components/social-list";
 
+import { fadeIn } from "@/lib/variants";
 import { socialsData, quickLinks, openingHoursData } from "@/lib/data";
 
 export const Footer = () => {
   return (
     <footer className="pt-12 xl:pt-37.5">
-      <div className="container pb-12 xl:pb-25">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.8 }}
+        className="container pb-12 xl:pb-25"
+      >
         <ul className="flex flex-col xl:flex-row gap-x-5 gap-y-10">
-          <li className="flex-1">
+          <motion.li
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex-1"
+          >
             <Logo className="mb-7.5" />
             <p className="mb-5 w-9/10">
               Dedicated to modern, patient-centered care and trusted medical
@@ -47,8 +63,14 @@ export const Footer = () => {
               </li>
             </ul>
             <SocialList socials={socialsData} />
-          </li>
-          <li className="flex-1">
+          </motion.li>
+          <motion.li
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex-1"
+          >
             <h4 className="h4 mb-12.5">Quick Links</h4>
             <ul className="flex gap-10">
               {quickLinks.map((col, i) => (
@@ -68,9 +90,14 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </li>
-
-          <li className="flex-1">
+          </motion.li>
+          <motion.li
+            variants={fadeIn("up", 0.8)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex-1"
+          >
             <h4 className="h4 mb-12.5">Opening Hours</h4>
             <ul className="space-y-5">
               {openingHoursData.map(({ id, days, time }) => (
@@ -83,9 +110,9 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </li>
+          </motion.li>
         </ul>
-      </div>
+      </motion.div>
       <p className="py-7.5 border-t border-accent/30 text-center text-base font-light">
         &copy; 2025 Insove - All rights reserved.
       </p>

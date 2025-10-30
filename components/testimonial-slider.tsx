@@ -1,7 +1,7 @@
 "use client";
 
-import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import { testimonialsData } from "@/lib/data";
 
@@ -13,7 +13,8 @@ export const TestimonialSlider = () => {
   return (
     <Swiper
       pagination={{ clickable: true }}
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
+      autoplay={{ delay: 8000, disableOnInteraction: false }}
       className="testimonialsSlider min-h-100 max-w-[98vw] xl:max-w-177.5"
     >
       {testimonialsData.map(({ id, name, position, message }) => (

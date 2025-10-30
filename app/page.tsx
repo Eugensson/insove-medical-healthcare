@@ -14,7 +14,7 @@ import { Testimonials } from "@/components/testimonials";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Header />
       <Hero />
       <Stats />
@@ -28,7 +28,7 @@ const Home = () => {
       <Brands />
       <Newsletter />
       <Footer />
-    </main>
+    </>
   );
 };
 

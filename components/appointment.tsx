@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { ChevronDownIcon } from "lucide-react";
 
 import {
@@ -22,6 +23,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 
+import { fadeIn } from "@/lib/variants";
+
 export const Appointment = () => {
   const [open, setOpen] = useState(false);
   const [date, setDate] = useState<Date | undefined>(undefined);
@@ -29,11 +32,23 @@ export const Appointment = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="mb-5 xl:mb-12.5 h2 text-center xl:text-left">
+        <motion.h2
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="mb-5 xl:mb-12.5 h2 text-center xl:text-left"
+        >
           Book Appointment or call:&nbsp;
           <span className="text-accent-tertiary">(773) 555-1234</span>
-        </h2>
-        <form className="flex flex-col gap-y-5">
+        </motion.h2>
+        <motion.form
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col gap-y-5"
+        >
           <div className="grid xl:grid-cols-2 gap-5">
             <Select>
               <SelectTrigger className="w-full">
@@ -147,7 +162,7 @@ export const Appointment = () => {
               Book an appointment
             </button>
           </div>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

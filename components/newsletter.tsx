@@ -1,4 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { fadeIn } from "@/lib/variants";
 
 export const Newsletter = () => {
   return (
@@ -14,14 +19,32 @@ export const Newsletter = () => {
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-14">
           <div className="flex-1 z-10 text-center md:text-left">
-            <p className="text-base text-white tracking-[2.24px] font-medium uppercase">
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.8 }}
+              className="text-base text-white tracking-[2.24px] font-medium uppercase"
+            >
               Health Insights Newsletter
-            </p>
-            <h2 className="mb-4 h1 text-white!">
+            </motion.p>
+            <motion.h2
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.8 }}
+              className="mb-4 h1 text-white!"
+            >
               Get expert health tips & updates
-            </h2>
+            </motion.h2>
           </div>
-          <form className="flex-1">
+          <motion.form
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex-1"
+          >
             <div className="relative flex flex-col md:flex-row gap-y-4">
               <input
                 type="email"
@@ -35,7 +58,7 @@ export const Newsletter = () => {
                 Subscrube
               </button>
             </div>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>
