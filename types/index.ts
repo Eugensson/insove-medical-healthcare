@@ -54,3 +54,12 @@ export type Department = {
   list: string[];
   link: string;
 };
+
+export type Post = {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: StaticImageData;
+  category: string;
+  date: string;
+};

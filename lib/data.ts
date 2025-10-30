@@ -17,11 +17,15 @@ import doctor5 from "@/public/assets/img/team/doctor-5.jpg";
 import doctor6 from "@/public/assets/img/team/doctor-6.jpg";
 import doctor7 from "@/public/assets/img/team/doctor-7.jpg";
 import doctor8 from "@/public/assets/img/team/doctor-8.jpg";
+import postImg1 from "@/public/assets/img/blog/img-1.png";
+import postImg2 from "@/public/assets/img/blog/img-2.jpg";
+import postImg3 from "@/public/assets/img/blog/img-3.jpg";
 
 import {
   Department,
   FaqItem,
   NavItem,
+  Post,
   Service,
   Stat,
   TeamItem,
@@ -494,5 +498,35 @@ export const departmentData: Department[] = [
       "Our dermatologists provide acne, eczema, and anti-aging solutions designed to renew skin tone, boost confidence, and ensure natural, long-lasting aesthetic results.",
     list: ["Medical Dermatology", "Laser Therapy", "Cosmetic Dermatology"],
     link: "/",
+  },
+];
+
+export const blogData: Post[] = [
+  {
+    id: "1",
+    title: "10 Foods to Avoid for Better Heart Health",
+    description:
+      "Discover which everyday foods can raise your cholesterol and blood pressure — and what to eat instead for a stronger, healthier heart. Expert advice from our cardiology team.",
+    imageUrl: postImg1,
+    category: "Cardiology",
+    date: "Oct 30, 2025",
+  },
+  {
+    id: "2",
+    title: "The Hidden Signs of Vitamin Deficiency You Shouldn’t Ignore",
+    description:
+      "Fatigue, brittle nails, or frequent colds may reveal more than you think. Learn how to recognize vitamin deficiencies early and restore your body’s balance naturally.",
+    imageUrl: postImg2,
+    category: "Wellness",
+    date: "Oct 30, 2025",
+  },
+  {
+    id: "3",
+    title: "Why Regular Check-Ups Are Key to Preventive Health Care",
+    description:
+      "Prevent illness before it starts. Understand how routine screenings and early diagnosis help you stay healthy and avoid costly treatments later.",
+    imageUrl: postImg3,
+    category: "Preventive Medicine",
+    date: "Oct 30, 2025",
   },
 ];

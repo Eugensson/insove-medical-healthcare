@@ -1,5 +1,6 @@
 import { Faq } from "@/components/faq";
 import { Hero } from "@/components/hero";
+import { Blog } from "@/components/blog";
 import { Team } from "@/components/team";
 import { Stats } from "@/components/stats";
 import { Header } from "@/components/header";
@@ -20,6 +21,7 @@ const Home = () => {
       <Team />
       <Faq />
       <Departments />
+      <Blog />
       <div className="h-1000" />
     </main>
   );
