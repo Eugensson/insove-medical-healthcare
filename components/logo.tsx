@@ -1,9 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-export const Logo = () => {
+interface LogoProps {
+  className?: string;
+}
+
+export const Logo = ({ className }: LogoProps) => {
   return (
-    <Link href="/" className="flex justify-center lg:justify-normal">
+    <Link
+      href="/"
+      className={cn("flex justify-center lg:justify-normal", className)}
+    >
       <Image
         src="/assets/img/header/logo.svg"
         alt="Insove Medical Healthcare"

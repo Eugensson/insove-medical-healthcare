@@ -20,13 +20,22 @@ import doctor8 from "@/public/assets/img/team/doctor-8.jpg";
 import postImg1 from "@/public/assets/img/blog/img-1.png";
 import postImg2 from "@/public/assets/img/blog/img-2.jpg";
 import postImg3 from "@/public/assets/img/blog/img-3.jpg";
+import brandImg1 from "@/public/assets/img/brands/brand-1.svg";
+import brandImg2 from "@/public/assets/img/brands/brand-2.svg";
+import brandImg3 from "@/public/assets/img/brands/brand-3.svg";
+import brandImg4 from "@/public/assets/img/brands/brand-4.svg";
+import brandImg5 from "@/public/assets/img/brands/brand-5.svg";
 
 import {
+  Brand,
   Department,
   FaqItem,
+  Link,
   NavItem,
+  openingHoursItem,
   Post,
   Service,
+  Social,
   Stat,
   TeamItem,
   Testimonial,
@@ -528,5 +537,96 @@ export const blogData: Post[] = [
     imageUrl: postImg3,
     category: "Preventive Medicine",
     date: "Oct 30, 2025",
+  },
+];
+
+export const brandData: Brand[] = [
+  {
+    id: "1",
+    label: "Lifetrace",
+    imageUrl: brandImg1,
+  },
+  {
+    id: "2",
+    label: "Medcare",
+    imageUrl: brandImg2,
+  },
+  {
+    id: "3",
+    label: "Betael",
+    imageUrl: brandImg3,
+  },
+  {
+    id: "4",
+    label: "Healer",
+    imageUrl: brandImg4,
+  },
+  {
+    id: "5",
+    label: "Soven",
+    imageUrl: brandImg5,
+  },
+];
+
+export const socialsData: Social[] = [
+  {
+    icon: RiLinkedinBoxFill,
+    link: "https://linkedin.com",
+    ariaLabel: "Link Insove Medical Healthcare's Linkedin account",
+  },
+  {
+    icon: RiFacebookCircleFill,
+    link: "https://facebook.com",
+    ariaLabel: "Link to Insove Medical Healthcare's Facebook account",
+  },
+  {
+    icon: RiYoutubeFill,
+    link: "https://youtube.com",
+    ariaLabel: "Link to Insove Medical Healthcare's Youtube channel",
+  },
+  {
+    icon: RiInstagramFill,
+    link: "https://instagram.com",
+    ariaLabel: "Link to Insove Medical Healthcare's Instagram account",
+  },
+];
+
+export const quickLinks: Link[][] = [
+  [
+    { title: "Home", href: "/" },
+    { title: "Doctors", href: "/" },
+    { title: "Departments", href: "/" },
+    { title: "Services", href: "/" },
+    { title: "Blog", href: "/" },
+  ],
+  [
+    { title: "Our Pricing", href: "/" },
+    { title: "Contact", href: "/" },
+    { title: "Careers", href: "/" },
+    { title: "FAQs", href: "/" },
+    { title: "Privacy Policy", href: "/" },
+  ],
+];
+
+export const openingHoursData: openingHoursItem[] = [
+  {
+    id: "1",
+    days: "Monday - Thursday:",
+    time: "8:00 AM - 6:00 PM",
+  },
+  {
+    id: "2",
+    days: "Friday - Saturday:",
+    time: "10:00 AM - 4:00 PM",
+  },
+  {
+    id: "3",
+    days: "Sunday:",
+    time: "Emergency Only",
+  },
+  {
+    id: "4",
+    days: "Personal:",
+    time: "7:00 AM - 9:00 PM",
   },
 ];

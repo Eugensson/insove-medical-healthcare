@@ -63,3 +63,20 @@ export type Post = {
   category: string;
   date: string;
 };
+
+export type Brand = {
+  id: string;
+  label: string;
+  imageUrl: StaticImageData;
+};
+
+export type Link = {
+  title: string;
+  href: string;
+};
+
+export type openingHoursItem = {
+  id: string;
+  days: string;
+  time: string;
+};
